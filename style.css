@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;    
+}
+html,body{
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: max-content;
+    position: fixed;
+    z-index: 1000;
+}
+header #menu{
+    background: rgba(238, 222, 192, 0.425);
+    width: 100%;
+    height: 85px;
+    padding: 10px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;    
+}
+header #menu .logo{
+    float: left;
+}
+header #menu .logo .img-logo{
+    height: 70px;
+    transition: 0.5s;
+}
+header #menu .box-search{
+    float: right;
+}
+header #menu ul{
+    margin-top: 10px;
+    list-style: none;
+}
+header #menu ul li {
+    float: left;
+    padding: 10px 20px;
+}
+header #menu ul li .text{
+    text-decoration: none;
+    color: #141718;
+    font-weight: bold;
+    font-size: 18px;
+}
+header #menu ul li .text span{
+    padding-bottom: 5px;
+    position: relative;
+}
+header #menu ul li .text span::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2.5px;
+    background-color: #141718;
+    transition: 0.3s;
+}
+header #menu ul li .text span:hover::after{
+    width: 100%;
+    left: 0%;
+    transition: 0.3s;
+    transition-delay: 0.2s;
+}
+header #menu .box-search{
+    height: max-content;
+    width: max-content;
+    padding: 0px auto;
+
+}
+header #menu .box-search .search a{
+    text-decoration: none;
+}
+header #menu .box-search .search .icon{
+    font-size: 33px;
+    cursor: pointer;
+}
+header #menu .box-search .search .icon{
+    margin-right: 18px;
+    color: #141718;
+    transition: 0.3s;
+}
+header #menu .box-search .search .icon:hover{
+    color: rgba(59, 59, 236, 0.699);
+    transition: 0.3s;
+}
+
+/* scroll-menu */
+
+header .menu.fix-menu{
+    height: 50px !important;
+    width: 100% !important;
+    background-color: #ffffff !important;
+    padding-left: 130px !important;
+    transition: 0.5s;
+}
+header .menu .logo .img-logo.fix-logo{
+
+    height: 50px !important;
+    transition: 0.5s;
+}
+header #menu .item-menu.fix-menuitem{
+    margin-left: 15px !important;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+
+/* -------------------------- */
+
+main{
+    width: 100%;
+    padding-top: 100px;
+}
+
+main #laptop {
+    width: 100%;
+    display: inline-block;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 33px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+main #laptop .remote-slide{
+    padding: 0px 400px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+main #laptop .remote-slide .group-btn-remote{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main #laptop .remote-slide .group-btn-remote .name-btn{
+    font-weight: 450;
+    font-size: 25px;
+    color: black;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+main #laptop .remote-slide .group-btn-remote .name-btn span{
+    position: relative;
+}
+
+main #laptop .remote-slide .group-btn-remote  span::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    border-radius: 10px;
+    background-color: #141718;
+    transition: all 0.5s ease;
+}
+
+main #laptop .remote-slide .group-btn-remote  span:hover::after{
+    z-index: 11;
+    width: 100%;
+    left: 0%;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+    
+}
+/* carousel  */
+
+main #laptop .slide-wrapper{
+    width: 100%;
+    height: 570px;
+}
+
+main #laptop .slide-wrapper .slide{
+    overflow-x: hidden;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    overflow: hidden;
+}
+main #laptop .slide-wrapper .slide ul{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+main #laptop .slide-wrapper .slide ul li{
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+main #laptop .slide-wrapper .slide ul li.active{
+    opacity: 1;
+}
+
+main #laptop .slide-wrapper #view-laptop{
+    overflow-x: hidden;
+    background-color: #a89d5b !important;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* .laptopasus{
+    background-image: url(image/LapTop/laptop_asus.png);
+    background-size: 90% 100%;
+}
+.laptopacer{
+
+}
+.laptopmsi{
+
+}
+.laptopdell{
+
+}
+.laptophp{
+    
+}
+.laptoplenovo{
+
+}
+.laptopmacbook{
+
+} */
+
+/* tablet */
+
+main #tablet{
+    width: 100%;
+    height: 600px;
+}
+
+main #tablet .container .tablet-carousel .item{
+    height: 600px;
+}
+
+main #tablet .container .tablet-carousel .item img{
+    height: 100%;
+    width: 100%;
+}
+
+main #mobile{
+    width: 100%;
+    height: 700px;
+    padding-top: 50px;
+}
+/*--------------- watch ---------------*/
+main #watch{
+    width: 100%;
+    height: max-content;
+    padding-top: 30px;
+    background-color: #222222;
+}
+main #watch h2{
+    margin-bottom: 70px;
+    color: #a89d5b;
+    position: relative;
+}
+
+main #watch h2::after{
+    content: " ";
+    height: 2.5px;
+    width: 25.4%;
+    background-color: #a89d5b;
+    position: absolute;
+    bottom: -8px;
+    left: 37.25%;
+}
+
+main #watch .container {
+    padding-bottom: 50px;
+    width: 100%;
+    height: max-content;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+main #watch .container .item{
+    max-width: 356px;
+    max-height: 356px;
+    text-align: center;
+    position: relative;
+    /* box-sizing: border-box; */
+    margin-bottom: 5px !important;
+    margin-right: 5px;  
+    overflow: hidden;  
+}
+
+main #watch .container .item .layout{
+    width: 356px;
+    height: 356px;
+    background-color: rgba(0, 0, 0, 0.637);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+main #watch .container .item .img-item{
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+}
+
+main #watch .container .item .img-item img{
+    background-color: #151517;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+}
+main #watch .container .item .text-item{
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    bottom: 2%;
+    left: 30%;
+    font-weight: bold;
+    z-index: 11;
+}
+
+main #watch .container .item .frame-item .frame-top{
+    position: absolute; 
+    height: 1.5px;
+    width: 0%;
+    background-color: #a89d5b;
+    top: 0;
+    left: 0; 
+    z-index: 13;
+    transition: 0.4s;
+
+}
+main #watch .container .item:hover .frame-item .frame-top{
+    width: 100.8%;
+    transition: 0.3s;
+}
+
+main #watch .container .item .frame-item .frame-bottom{
+    position: absolute; 
+    height: 1.5px;
+    width: 0%;
+    background-color: #a89d5b;
+    bottom: 0;
+    right: 0;
+    z-index: 13;
+    transition: 0.4s;
+}
+main #watch .container .item:hover .frame-item .frame-bottom{
+    width: 100.8%;
+    transition: 0.3s;
+}
+main #watch .container .item .frame-item .frame-left{
+    position: absolute; 
+    height: 0%;
+    width: 1.5px;
+    background-color: #a89d5b;
+    bottom: 0;
+    left: 0;
+    z-index: 13;
+    transition: 0.4s;
+}
+main #watch .container .item:hover .frame-item .frame-left{
+    height: 100%;
+    transition: 0.4s;
+    transition-delay: 0.4s;
+    
+}
+main #watch .container .item .frame-item .frame-right{
+    position: absolute; 
+    height: 0%;
+    width: 1.5px;
+    background-color: #a89d5b;
+    top: 0;
+    right: 0;
+    z-index: 13;
+    transition: 0.4s;
+}
+main #watch .container .item:hover .frame-item .frame-right{
+    height: 100%;
+    transition: 0.3s;
+    transition-delay: 0.4s;
+}
+
+main #watch .container .item .img-item img{
+    font-size: inherit;
+    transition: 5s;
+}
+
+main #watch .container .item:hover .img-item img{
+    font-size: inherit;
+    transform: scale(1.1);
+    transition: 5s;
+}
+
+main #watch .container .item .morelink {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+
+}
+/* ------------------------- */
+
+footer{
+    width: 100%;
+    height: 400px;
+    border-top: 2px solid #a89d5b;
+    background-image: url(image/ImageHome/bg_footer.jpg);
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+}
+footer .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222222ab;
+}
+footer .content-footer{
+    z-index: 5 !important;
+
+}
+
+/* ------------------------- */
+
+.box-btn-backtop{
+
+    background-color: blueviolet;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    visibility: hidden; 
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.box-btn-backtop .icon-backtotop{
+    font-size: 30px;
+    position: absolute;
+    top: 2.5px;
+    left: 8px;  
+}
+
+.box-btn-backtop.show-box-backtop{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}

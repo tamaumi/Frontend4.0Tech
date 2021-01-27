@@ -1,0 +1,3 @@
+function LocationClick(){
+    this.t
+}

@@ -1,0 +1,98 @@
+
+ #laptop {
+    width: 100%;
+    display: inline-block;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 33px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+ #laptop .remote-slide{
+    padding: 0px 400px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+ #laptop .remote-slide .group-btn-remote{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+ #laptop .remote-slide .group-btn-remote .name-btn{
+    font-weight: 450;
+    font-size: 25px;
+    color: black;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+ #laptop .remote-slide .group-btn-remote .name-btn span{
+    position: relative;
+}
+
+ #laptop .remote-slide .group-btn-remote  span::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    border-radius: 10px;
+    background-color: #141718;
+    transition: all 0.5s ease;
+}
+
+ #laptop .remote-slide .group-btn-remote  span:hover::after{
+    z-index: 11;
+    width: 100%;
+    left: 0%;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+    
+}
+/* carousel  */
+
+ #laptop .slide-wrapper{
+    width: 100%;
+    height: 570px;
+}
+
+ #laptop .slide-wrapper .slide{
+    overflow-x: hidden;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    overflow: hidden;
+}
+ #laptop .slide-wrapper .slide ul{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+ #laptop .slide-wrapper .slide ul li{
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+ #laptop .slide-wrapper .slide ul li.active{
+    opacity: 1;
+}
+
+ #laptop .slide-wrapper #view-laptop{
+    overflow-x: hidden;
+    background-color: #a89d5b !important;
+    width: 100%;
+    height: 100%;
+}
